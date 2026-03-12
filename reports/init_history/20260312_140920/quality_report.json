@@ -1,0 +1,10 @@
+{
+  "run_mode": "init_history",
+  "started_at": "2026-03-12T14:09:20",
+  "finished_at": "2026-03-12T14:13:43",
+  "duration_seconds": 263.164,
+  "tables": {},
+  "exceptions": [
+    "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out."
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "run_mode": "init_history",
+  "started_at": "2026-03-12T10:50:09",
+  "finished_at": "2026-03-12T10:50:09",
+  "duration_seconds": 0.122,
+  "tables": {
+    "trade_cal": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 3,
+      "success_count": 3,
+      "null_counts": {
+        "exchange": 0,
+        "cal_date": 0,
+        "is_open": 0,
+        "pretrade_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\trade_cal\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\trade_cal\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\trade_cal\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\trade_cal\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "stock_basic": {
+      "fetched_rows": 1,
+      "cleaned_rows": 1,
+      "rows_before_dedup": 1,
+      "rows_after_dedup": 1,
+      "retry_count": 0,
+      "request_count": 3,
+      "success_count": 3,
+      "null_counts": {
+        "ts_code": 0,
+        "symbol": 0,
+        "name": 0,
+        "area": 0,
+        "industry": 0,
+        "market": 0,
+        "list_status": 0,
+        "list_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 1991,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\stock_basic\\year=1991",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 1991,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\stock_basic\\year=1991",
+          "file_count": 1,
+          "row_count": 1
+        }
+      ],
+      "exception_messages": []
+    },
+    "daily": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "open": 0,
+        "close": 0,
+        "vol": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 6,
+        "actual_dates": 6,
+        "missing_dates": []
+      },
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\daily\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\daily\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\daily\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\daily\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "daily_basic": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "turnover_rate": 0,
+        "pe": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 6,
+        "actual_dates": 6,
+        "missing_dates": []
+      },
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\daily_basic\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\daily_basic\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\daily_basic\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\daily_basic\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "adj_factor": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "adj_factor": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 6,
+        "actual_dates": 6,
+        "missing_dates": []
+      },
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\adj_factor\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\adj_factor\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\adj_factor\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\adj_factor\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "suspend_d": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "suspend_timing": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 6,
+        "actual_dates": 0,
+        "missing_dates": [
+          "2024-12-30",
+          "2024-12-31",
+          "2025-01-02",
+          "2025-01-03",
+          "2025-01-06",
+          "2025-01-07"
+        ]
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    },
+    "stk_limit": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "up_limit": 0,
+        "down_limit": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 6,
+        "actual_dates": 6,
+        "missing_dates": []
+      },
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\stk_limit\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\stk_limit\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\stk_limit\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\stk_limit\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "fina_indicator": {
+      "fetched_rows": 2,
+      "cleaned_rows": 2,
+      "rows_before_dedup": 2,
+      "rows_after_dedup": 2,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "ann_date": 0,
+        "f_ann_date": 0,
+        "end_date": 0,
+        "report_type": 0,
+        "comp_type": 0,
+        "update_flag": 0,
+        "roe": 0,
+        "source_table": 0,
+        "real_ann_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\fina_indicator\\year=2024",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\fina_indicator\\year=2025",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\fina_indicator\\year=2024",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\fina_indicator\\year=2025",
+          "file_count": 1,
+          "row_count": 1
+        }
+      ],
+      "exception_messages": []
+    },
+    "income": {
+      "fetched_rows": 2,
+      "cleaned_rows": 2,
+      "rows_before_dedup": 2,
+      "rows_after_dedup": 2,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "ann_date": 0,
+        "f_ann_date": 0,
+        "end_date": 0,
+        "report_type": 0,
+        "comp_type": 0,
+        "update_flag": 0,
+        "revenue": 0,
+        "source_table": 0,
+        "real_ann_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\income\\year=2024",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\income\\year=2025",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\income\\year=2024",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\income\\year=2025",
+          "file_count": 1,
+          "row_count": 1
+        }
+      ],
+      "exception_messages": []
+    },
+    "balancesheet": {
+      "fetched_rows": 2,
+      "cleaned_rows": 1,
+      "rows_before_dedup": 1,
+      "rows_after_dedup": 1,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "ann_date": 0,
+        "f_ann_date": 0,
+        "end_date": 0,
+        "report_type": 0,
+        "comp_type": 0,
+        "update_flag": 0,
+        "total_assets": 0,
+        "source_table": 0,
+        "real_ann_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\balancesheet\\year=2024",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\1_ods_raw\\balancesheet\\year=2025",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\2_dwd_detail\\balancesheet\\year=2024",
+          "file_count": 1,
+          "row_count": 1
+        }
+      ],
+      "exception_messages": []
+    },
+    "daily_master": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 0,
+      "success_count": 0,
+      "null_counts": {},
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "dws",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\3_dws_summary\\daily_master\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dws",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\3_dws_summary\\daily_master\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "financial_events": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 0,
+      "success_count": 0,
+      "null_counts": {},
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "dws",
+          "year": 2024,
+          "path": "state\\test_runs\\it_dea5472a\\data\\3_dws_summary\\financial_events\\year=2024",
+          "file_count": 1,
+          "row_count": 3
+        },
+        {
+          "layer": "dws",
+          "year": 2025,
+          "path": "state\\test_runs\\it_dea5472a\\data\\3_dws_summary\\financial_events\\year=2025",
+          "file_count": 1,
+          "row_count": 2
+        }
+      ],
+      "exception_messages": []
+    }
+  },
+  "exceptions": []
+}

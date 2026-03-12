@@ -17,3 +17,8 @@
 - 出现 bug 时，先编写能重现该 bug 的测试，再修复直到测试通过
 - 每次我纠正你时，反思你做错了什么，并将其写入AGENTS.md，永不再犯
 - 回答关于过往工作或决策的问题前，先查阅记忆文件
+
+## Reflection Notes
+
+- When the user narrows the implementation scope, do not broaden it based on available APIs. Restate the exact scope and implement only that scope.
+

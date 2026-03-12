@@ -1,0 +1,11 @@
+{
+  "completed_tables": [
+    "adj_factor",
+    "daily",
+    "daily_basic",
+    "stk_limit",
+    "stock_basic",
+    "suspend_d",
+    "trade_cal"
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "run_mode": "init_history",
+  "started_at": "2026-03-12T10:47:48",
+  "finished_at": "2026-03-12T10:47:48",
+  "duration_seconds": 0.026,
+  "tables": {
+    "trade_cal": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 3,
+      "success_count": 3,
+      "null_counts": {
+        "exchange": 0,
+        "cal_date": 0,
+        "is_open": 0,
+        "pretrade_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_8da6b626\\data\\1_ods_raw\\trade_cal\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_8da6b626\\data\\1_ods_raw\\trade_cal\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_8da6b626\\data\\2_dwd_detail\\trade_cal\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_8da6b626\\data\\2_dwd_detail\\trade_cal\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "stock_basic": {
+      "fetched_rows": 1,
+      "cleaned_rows": 1,
+      "rows_before_dedup": 1,
+      "rows_after_dedup": 1,
+      "retry_count": 0,
+      "request_count": 3,
+      "success_count": 3,
+      "null_counts": {
+        "ts_code": 0,
+        "symbol": 0,
+        "name": 0,
+        "area": 0,
+        "industry": 0,
+        "market": 0,
+        "list_status": 0,
+        "list_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 1991,
+          "path": "state\\test_runs\\it_8da6b626\\data\\1_ods_raw\\stock_basic\\year=1991",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 1991,
+          "path": "state\\test_runs\\it_8da6b626\\data\\2_dwd_detail\\stock_basic\\year=1991",
+          "file_count": 1,
+          "row_count": 1
+        }
+      ],
+      "exception_messages": []
+    },
+    "daily": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "open": 0,
+        "close": 0,
+        "vol": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 0,
+        "actual_dates": 0,
+        "missing_dates": []
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    },
+    "daily_basic": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "turnover_rate": 0,
+        "pe": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 0,
+        "actual_dates": 0,
+        "missing_dates": []
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    },
+    "adj_factor": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "adj_factor": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 0,
+        "actual_dates": 0,
+        "missing_dates": []
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    },
+    "suspend_d": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "suspend_timing": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 0,
+        "actual_dates": 0,
+        "missing_dates": []
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    },
+    "stk_limit": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "up_limit": 0,
+        "down_limit": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 0,
+        "actual_dates": 0,
+        "missing_dates": []
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    },
+    "fina_indicator": {
+      "fetched_rows": 2,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {},
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [],
+      "exception_messages": []
+    }
+  },
+  "exceptions": [
+    "unable to find column \"source_table\"; valid columns: [\"ts_code\", \"ann_date\", \"f_ann_date\", \"end_date\", \"report_type\", \"comp_type\", \"update_flag\", \"roe\", \"__non_null_score\"]\n\nResolved plan until failure:\n\n\t---> FAILED HERE RESOLVING 'sink' <---\n WITH_COLUMNS:\n [col(\"ts_code\").is_not_null().strict_cast(Int32).sum_horizontal([col(\"ann_date\").is_not_null().strict_cast(Int32), col(\"f_ann_date\").is_not_null().strict_cast(Int32), col(\"end_date\").is_not_null().strict_cast(Int32), col(\"report_type\").is_not_null().strict_cast(Int32), col(\"comp_type\").is_not_null().strict_cast(Int32), col(\"update_flag\").is_not_null().strict_cast(Int32), col(\"roe\").is_not_null().strict_cast(Int32)]).alias(\"__non_null_score\")] \n  DF [\"ts_code\", \"ann_date\", \"f_ann_date\", \"end_date\", ...]; PROJECT */8 COLUMNS"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "5/10",
+  "table_name": "fina_indicator",
+  "api_name": "fina_indicator_vip",
+  "event": "request_retry",
+  "request_index": 7,
+  "request_total": 46,
+  "row_count": 36549,
+  "updated_at": "2026-03-12T16:02:44",
+  "window_start": "20160624",
+  "window_end": "20160921",
+  "attempt": 1,
+  "error": "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out."
+}

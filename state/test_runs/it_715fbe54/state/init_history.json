@@ -1,0 +1,14 @@
+{
+  "completed_tables": [
+    "adj_factor",
+    "balancesheet",
+    "daily",
+    "daily_basic",
+    "fina_indicator",
+    "income",
+    "stk_limit",
+    "stock_basic",
+    "suspend_d",
+    "trade_cal"
+  ]
+}

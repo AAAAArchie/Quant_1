@@ -1,0 +1,121 @@
+{
+  "run_mode": "init_history",
+  "started_at": "2026-03-12T10:46:48",
+  "finished_at": "2026-03-12T10:46:48",
+  "duration_seconds": 0.021,
+  "tables": {
+    "trade_cal": {
+      "fetched_rows": 6,
+      "cleaned_rows": 6,
+      "rows_before_dedup": 6,
+      "rows_after_dedup": 6,
+      "retry_count": 0,
+      "request_count": 3,
+      "success_count": 3,
+      "null_counts": {
+        "exchange": 0,
+        "cal_date": 0,
+        "is_open": 0,
+        "pretrade_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 2024,
+          "path": "state\\test_runs\\it_9abbbcbc\\data\\1_ods_raw\\trade_cal\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "ods",
+          "year": 2025,
+          "path": "state\\test_runs\\it_9abbbcbc\\data\\1_ods_raw\\trade_cal\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        },
+        {
+          "layer": "dwd",
+          "year": 2024,
+          "path": "state\\test_runs\\it_9abbbcbc\\data\\2_dwd_detail\\trade_cal\\year=2024",
+          "file_count": 1,
+          "row_count": 2
+        },
+        {
+          "layer": "dwd",
+          "year": 2025,
+          "path": "state\\test_runs\\it_9abbbcbc\\data\\2_dwd_detail\\trade_cal\\year=2025",
+          "file_count": 1,
+          "row_count": 4
+        }
+      ],
+      "exception_messages": []
+    },
+    "stock_basic": {
+      "fetched_rows": 1,
+      "cleaned_rows": 1,
+      "rows_before_dedup": 1,
+      "rows_after_dedup": 1,
+      "retry_count": 0,
+      "request_count": 3,
+      "success_count": 3,
+      "null_counts": {
+        "ts_code": 0,
+        "symbol": 0,
+        "name": 0,
+        "area": 0,
+        "industry": 0,
+        "market": 0,
+        "list_status": 0,
+        "list_date": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {},
+      "partition_writes": [
+        {
+          "layer": "ods",
+          "year": 1991,
+          "path": "state\\test_runs\\it_9abbbcbc\\data\\1_ods_raw\\stock_basic\\year=1991",
+          "file_count": 1,
+          "row_count": 1
+        },
+        {
+          "layer": "dwd",
+          "year": 1991,
+          "path": "state\\test_runs\\it_9abbbcbc\\data\\2_dwd_detail\\stock_basic\\year=1991",
+          "file_count": 1,
+          "row_count": 1
+        }
+      ],
+      "exception_messages": []
+    },
+    "daily": {
+      "fetched_rows": 0,
+      "cleaned_rows": 0,
+      "rows_before_dedup": 0,
+      "rows_after_dedup": 0,
+      "retry_count": 0,
+      "request_count": 1,
+      "success_count": 1,
+      "null_counts": {
+        "ts_code": 0,
+        "trade_date": 0,
+        "open": 0,
+        "close": 0,
+        "vol": 0
+      },
+      "primary_key_duplicates": 0,
+      "trade_date_coverage": {
+        "expected_dates": 0,
+        "actual_dates": 0,
+        "missing_dates": []
+      },
+      "partition_writes": [],
+      "exception_messages": []
+    }
+  },
+  "exceptions": [
+    "`year` operation not supported for dtype `null`"
+  ]
+}
